@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+#include<math.h>
 int primefactors(int x)
 {
     int i;
@@ -7,9 +7,8 @@ int primefactors(int x)
     {
         while(x%i==0)
         {
-            cout<<i;
+            printf("%d ",i);
             x=x/i;
-            return i;
         }
     }
 }
@@ -17,9 +16,8 @@ int primefactors(int x)
 int main()
 {
     int n;
-    cout<<"Enter a positive number:";
-    cin>>n;
+    printf("Enter a positive number:");
+    scanf("%d",&n);
     primefactors(n);
-        return 0;
+    return 0;
 }
- 
